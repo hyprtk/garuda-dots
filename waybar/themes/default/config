@@ -29,7 +29,7 @@
     // custom keybooard state
         "custom/kbstate": {
         "return-type": "json",
-        "exec": "~/dotfiles/scripts/keyboard_state.sh",
+        "exec": "~/garudadots/scripts/keyboard_state.sh",
         "restart-interval": 5,
         "hide-empty-text": true
     },
@@ -37,7 +37,7 @@
     // Waybar Theme
     "custom/waybarthemes": {
         "format": "",
-        "on-click": "~/dotfiles/waybar/themeswitcher.sh",
+        "on-click": "~/garudadots/waybar/themeswitcher.sh",
         "tooltip": true,
         "tooltip-format": "Waybar Theme Switcher"
     },

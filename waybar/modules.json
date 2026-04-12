@@ -56,9 +56,9 @@
     // Cliphist
     "custom/cliphist": {
         "format": "",
-        "on-click": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh",
-        "on-click-right": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh d",
-        "on-click-middle": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh w",
+        "on-click": "sleep 0.1 && ~/garudadots/scripts/cliphist.sh",
+        "on-click-right": "sleep 0.1 && ~/garudadots/scripts/cliphist.sh d",
+        "on-click-middle": "sleep 0.1 && ~/garudadots/scripts/cliphist.sh w",
         "tooltip": true,
         "tooltip-format": "Clipboard History"
     },
@@ -76,11 +76,11 @@
     "custom/wf-recorder": {
         "format": "{} ",
         "interval": "once",
-        "exec": "~/dotfiles/hypr/scripts/wf-record-text.py",
+        "exec": "~/garudadots/hypr/scripts/wf-record-text.py",
         "return-type": "json",
         "tooltip": "true",
         "exec-if": "pgrep 'wf-recorder'",
-        "on-click": "exec ~/dotfiles/hypr/scripts/wf-record-stop.sh",
+        "on-click": "exec ~/garudadots/hypr/scripts/wf-record-stop.sh",
         "signal": 8
     },
     
@@ -90,17 +90,17 @@
         "tooltip-format": "{}",
         "escape": true,
         "return-type": "json",       
-        "exec": "~/dotfiles/scripts/updates.sh",
+        "exec": "~/garudadots/scripts/updates.sh",
         "restart-interval": 60,
-        "on-click": "alacritty -o window.dimensions.lines=45 window.dimensions.columns=90 --class floating -e ~/dotfiles/scripts/installupdates.sh",
+        "on-click": "alacritty -o window.dimensions.lines=45 window.dimensions.columns=90 --class floating -e ~/garudadots/scripts/installupdates.sh",
         "tooltip": false
     },
     
     // Wallpaper
     "custom/wallpaper": {
         "format": "",
-        "on-click": "~/dotfiles/hypr/scripts/matuwall-toggle.sh",
-        "on-click-right": "~/dotfiles/scripts/updatewal-awww.sh",
+        "on-click": "~/garudadots/hypr/scripts/matuwall-toggle.sh",
+        "on-click-right": "~/garudadots/scripts/updatewal-awww.sh",
         "tooltip": true,
         "tooltip-format": "Wallpaper Switcher"
     },
@@ -108,7 +108,7 @@
     // Waybar Theme
     "custom/waybarthemes": {
         "format": "",
-        "on-click": "~/dotfiles/waybar/themeswitcher.sh",
+        "on-click": "~/garudadots/waybar/themeswitcher.sh",
         "tooltip": true,
         "tooltip-format": "Waybar Theme Switcher"
     },
@@ -116,7 +116,7 @@
     // Icon Theme
     "custom/iconthemes": {
         "format": "",
-        "on-click": "~/dotfiles/scripts/icon-color-select.sh",
+        "on-click": "~/garudadots/scripts/icon-color-select.sh",
         "tooltip": true,
         "tooltip-format": "Folder Theme Switcher"
     },
@@ -124,7 +124,7 @@
         // Set sddm & grub to current wallpaper
     "custom/sddmgrub": {
         "format": "",
-        "on-click": "alacritty -o window.dimensions.lines=45 window.dimensions.columns=90 --class floating -e ~/dotfiles/sddm/update.sh",
+        "on-click": "alacritty -o window.dimensions.lines=45 window.dimensions.columns=90 --class floating -e ~/garudadots/sddm/update.sh",
         "tooltip": true,
         "tooltip-format": "sddm/grub updater"
     },
@@ -132,7 +132,7 @@
     // Filemanager Launcher
     "custom/filemanager": {
         "format": "🗁",
-        "on-click": "~/dotfiles/scripts/filemanager.sh",
+        "on-click": "~/garudadots/scripts/filemanager.sh",
         "tooltip": true,
         "tooltip-format": "File Manager"
     },
@@ -147,14 +147,14 @@
     // Rofi Calculator
     "custom/calculator": {
         "format": "",
-        "on-click": "~/dotfiles/scripts/calculator.sh",
+        "on-click": "~/garudadots/scripts/calculator.sh",
         "tooltip": false
     },
 
     // Rofi Application Launcher
     "custom/appmenu": {
         "format": " Home",
-        "on-click": "~/dotfiles/scripts/applauncher.sh",
+        "on-click": "~/garudadots/scripts/applauncher.sh",
         "tooltip": true,
         "tooltip-format": "Application Launcher"
     },
@@ -162,14 +162,14 @@
     // Power Menu
     "custom/exit": {
         "format": "",
-        "on-click": "~/dotfiles/hyprlogout/logout.sh",
+        "on-click": "~/garudadots/hyprlogout/logout.sh",
         "tooltip": false
     },
 
     // Screenshot
     "custom/screenshot": {
         "format": "",
-        "on-click": "~/dotfiles/scripts/screenshot.sh",
+        "on-click": "~/garudadots/scripts/screenshot.sh",
         "tooltip": true,
         "tooltip-format": "Take a Screenshot"
     },
@@ -190,7 +190,7 @@
     // custom keybooard state
       "custom/kbstate": {
         "return-type": "json",
-        "exec": "~/dotfiles/scripts/keyboard_state.sh",
+        "exec": "~/garudadots/scripts/keyboard_state.sh",
         "restart-interval": 5,
         "hide-empty-text": true
     },
@@ -257,7 +257,7 @@
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
-            "on-click-right": "~/dotfiles/scripts/Volume.sh --toggle-mute",
+            "on-click-right": "~/garudadots/scripts/Volume.sh --toggle-mute",
             "on-click": "pavucontrol -t 3",
         "format-icons": {
             "headphone": "",
@@ -267,8 +267,8 @@
             "portable": "",
             "car": "",
             "default": ["", " ", " "],
-            "on-scroll-up": "~/dotfiles/scripts/Volume.sh --volume-inc",
-            "on-scroll-down": "~/dotfiles/scripts/Volume.sh --volume-dec",
+            "on-scroll-up": "~/garudadots/scripts/Volume.sh --volume-inc",
+            "on-scroll-down": "~/garudadots/scripts/Volume.sh --volume-dec",
             "scroll-step": 5,  
         },
     },
@@ -277,10 +277,10 @@
         "format": "{format_source}",
         "format-source": " {volume}%",
         "format-source-muted": "",
-            "on-click-right": "~/dotfiles/scripts/Volume.sh --toggle-mic",
+            "on-click-right": "~/garudadots/scripts/Volume.sh --toggle-mic",
             "on-click": "pavucontrol -t 4",
-            "on-scroll-up": "~/dotfiles/scripts/Volume.sh --mic-inc",
-            "on-scroll-down": "~/dotfiles/scripts/Volume.sh --mic-dec",
+            "on-scroll-up": "~/garudadots/scripts/Volume.sh --mic-inc",
+            "on-scroll-down": "~/garudadots/scripts/Volume.sh --mic-dec",
             "scroll-step": 5,
         },
 
@@ -295,7 +295,7 @@
     //keybindings
     "custom/keybindings": {
     "format": "",
-    "on-click": "~/dotfiles/scripts/keyhint.sh",
+    "on-click": "~/garudadots/scripts/keyhint.sh",
     "tooltip": true,
     "tooltip-format": "Keybinding Help"
     },

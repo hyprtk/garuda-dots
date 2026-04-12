@@ -23,7 +23,7 @@
 # ----------------------------------------------------- 
 # Default theme folder
 # ----------------------------------------------------- 
-themes_path="$HOME/dotfiles/waybar/themes"
+themes_path="$HOME/garudadots/waybar/themes"
 
 # ----------------------------------------------------- 
 # Initialize arrays
@@ -39,7 +39,7 @@ for value in $options
 do
     if [ ! $value == "$themes_path" ]; then
         if [ $(find $value -maxdepth 1 -type d | wc -l) = 1 ]; then
-            result=$(echo $value | sed "s#$HOME/dotfiles/waybar/themes/#/#g")
+            result=$(echo $value | sed "s#$HOME/garudadots/waybar/themes/#/#g")
             IFS='/' read -ra arrThemes <<< "$result"
             listThemes[${#listThemes[@]}]="/${arrThemes[1]};$result"
             if [ -f $themes_path$result/config.sh ]; then
@@ -56,12 +56,12 @@ done
 # Show rofi dialog
 # ----------------------------------------------------- 
 listNames=${listNames::-2}
-choice=$(echo -e "$listNames" | rofi -dmenu -config ~/dotfiles/rofi/config-wallpaper.rasi -no-show-icons -width 30 -p "Themes" -format i) 
+choice=$(echo -e "$listNames" | rofi -dmenu -config ~/garudadots/rofi/config-wallpaper.rasi -no-show-icons -width 30 -p "Themes" -format i) 
 
 # ----------------------------------------------------- 
 # Set new theme by writing the theme information to ~/.cache/.themestyle.sh
 # ----------------------------------------------------- 
 if [ "$choice" ]; then
     echo "${listThemes[$choice+1]}" > ~/.cache/.themestyle.sh
-    ~/dotfiles/waybar/launch.sh
+    ~/garudadots/waybar/launch.sh
 fi

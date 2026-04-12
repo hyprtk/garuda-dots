@@ -4,8 +4,8 @@
 
 wal -q -i ~/Pictures/Wallpapers/ 
 
-killall waybar 2>/dev/null; ~/dotfiles/waybar/launch.sh
+killall waybar 2>/dev/null; ~/garudadots/waybar/launch.sh
 
-~/dotfiles/papirus-icons/scripts/change-icons.sh
+~/garudadots/papirus-icons/scripts/change-icons.sh
 
 exit

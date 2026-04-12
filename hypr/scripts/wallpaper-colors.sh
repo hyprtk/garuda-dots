@@ -11,8 +11,8 @@ bash ~/.config/hypr/scripts/hyprlock_wall.sh "$WALLPAPER"
 #bash ~/.config/hypr/scripts/sddm-colors.sh
 cp "$WALLPAPER" ~/.cache/current-wallpaper.png 2>/dev/null
 hyprctl reload 2>/dev/null
-killall waybar 2>/dev/null; ~/dotfiles/waybar/launch.sh
-~/dotfiles/papirus-icons/scripts/change-icons.sh
+killall waybar 2>/dev/null; ~/garudadots/waybar/launch.sh
+~/garudadots/papirus-icons/scripts/change-icons.sh
 pkill dunst 2>/dev/null; dunst &
 pkill wob 2>/dev/null
 rm -f /tmp/wobpipe && mkfifo /tmp/wobpipe

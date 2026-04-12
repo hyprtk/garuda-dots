@@ -56,8 +56,8 @@ echo ""
 sudo rm -rf /usr/share/grub/themes/*
 sudo rm -rf /boot/grub/themes/*
 echo ""
-sudo cp $HOME/dotfiles/sddm/sddm.conf /etc/sddm.conf.d/
-sudo cp $HOME/dotfiles/sddm/sddm.conf /etc/
+sudo cp $HOME/garudadots/sddm/sddm.conf /etc/sddm.conf.d/
+sudo cp $HOME/garudadots/sddm/sddm.conf /etc/
 echo "File /etc/sddm.conf updated."
 echo ""
 echo ""
@@ -65,7 +65,7 @@ sudo cp ~/.cache/current-wallpaper.png /usr/share/sddm/themes/Sugar-Candy/Backgr
 echo "Current wallpaper copied into /usr/share/sddm/themes/Sugar-Candy/Backgrounds/"
 echo ""
 echo ""
-sudo cp $HOME/dotfiles/sddm/theme.conf /usr/share/sddm/themes/Sugar-Candy/
+sudo cp $HOME/garudadots/sddm/theme.conf /usr/share/sddm/themes/Sugar-Candy/
 echo "File theme.conf updated in /usr/share/sddm/themes/Sugar-Candy/"
 echo ""
 echo ""

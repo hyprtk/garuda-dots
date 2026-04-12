@@ -8,7 +8,7 @@ echo " You will now be asked to enter your Root password to proceed with the ins
 echo""
 sleep 2
 sudo pacman -S figlet --noconfirm
-sudo cp ~/dotfiles/figlet/fonts/* /usr/share/figlet/fonts/
+sudo cp ~/garudadots/figlet/fonts/* /usr/share/figlet/fonts/
 figlet -f 3d "Install"
 echo "
 
@@ -50,7 +50,7 @@ echo ""
 source $(dirname "$0")/scripts/library.sh
 echo ""
 echo ""
-sh ~/dotfiles/scripts/set-timezone.sh
+sh ~/garudadots/scripts/set-timezone.sh
 echo ""
 sleep 2
 clear
@@ -80,7 +80,7 @@ else
     git clone https://aur.archlinux.org/yay-git.git ~/Downloads/yay-git
     cd ~/Downloads/yay-git
     makepkg -si
-    cd ~/dotfiles/
+    cd ~/garudadots/
     clear
 fi
 echo ""
@@ -112,7 +112,7 @@ echo ""
 sleep 2
 echo ""
 clear
-sh ~/dotfiles/hypr/packages/graphics-card.sh
+sh ~/garudadots/hypr/packages/graphics-card.sh
 sleep 2
 clear
 while true; do
@@ -140,63 +140,63 @@ echo "
 "
 
 echo ""
-sh ~/dotfiles/hypr/packages/hyprland.sh
+sh ~/garudadots/hypr/packages/hyprland.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/xfce4.sh
+sh ~/garudadots/hypr/packages/xfce4.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/filetools.sh
+sh ~/garudadots/hypr/packages/filetools.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/webtools.sh
+sh ~/garudadots/hypr/packages/webtools.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/printers.sh
+sh ~/garudadots/hypr/packages/printers.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/network.sh
+sh ~/garudadots/hypr/packages/network.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/media.sh
+sh ~/garudadots/hypr/packages/media.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/terminaltools.sh
+sh ~/garudadots/hypr/packages/terminaltools.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/systemtools.sh
+sh ~/garudadots/hypr/packages/systemtools.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/system.sh
+sh ~/garudadots/hypr/packages/system.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/hyprviz.sh
+sh ~/garudadots/hypr/packages/hyprviz.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/sddm-check.sh
+sh ~/garudadots/hypr/packages/sddm-check.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/sddmgrub.sh
+sh ~/garudadots/hypr/packages/sddmgrub.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/hypr/packages/matuwall.sh
+sh ~/garudadots/hypr/packages/matuwall.sh
 echo ""
 sleep 2
 echo ""
-sh ~/dotfiles/scripts/awww-wrapper.sh
+sh ~/garudadots/scripts/awww-wrapper.sh
 echo ""
 echo "
 #########################################################
@@ -239,7 +239,7 @@ echo "
 "
 echo ""
 echo ""
-sh ~/dotfiles/hypr/packages/wallpapers.sh
+sh ~/garudadots/hypr/packages/wallpapers.sh
 echo ""
 sleep 2
 echo "
@@ -260,7 +260,7 @@ echo "
 "
 echo ""
 echo ""
-sh ~/dotfiles/hypr/packages/fonts.sh
+sh ~/garudadots/hypr/packages/fonts.sh
 echo ""
 sleep 2
 echo "
@@ -303,12 +303,12 @@ echo "
 "
 echo ""
 echo "-> Init pywal16"
-wal -i ~/dotfiles/Wallpapers/default.png
+wal -i ~/garudadots/Wallpapers/default.png
 echo "pywal16 initiated."
 echo ""
 echo ""
 echo "-> Copy default wallpaper to .cache"
-cp ~/dotfiles/Wallpapers/default.png ~/.cache/current-wallpaper.png
+cp ~/garudadots/Wallpapers/default.png ~/.cache/current-wallpaper.png
 sudo cp ~/.cache/current-wallpaper.png /root/.cache/current-wallpaper.png
 echo "default wallpaper copied."
 echo ""
@@ -380,7 +380,7 @@ echo "
 #                                                       #
 #########################################################
 "
-sudo cp ~/dotfiles/User-Management/manage-users.desktop /usr/share/applications/
+sudo cp ~/garudadots/User-Management/manage-users.desktop /usr/share/applications/
 sudo systemctl enable --now cockpit.socket
 sudo systemctl start cockpit.socket
 echo ""
@@ -393,7 +393,7 @@ echo "
 #                                                       #
 #########################################################
 "
-sudo cp ~/dotfiles/smb/smb.conf /etc/samba/
+sudo cp ~/garudadots/smb/smb.conf /etc/samba/
 sudo systemctl enable smb nmb
 sudo systemctl start smb nmb
 sudo systemctl restart smb nmb
@@ -410,17 +410,17 @@ echo "
 echo ""
 echo ""
 echo "If you installed an NVIDIA Graphics Card please follow the instructions in the"
-echo "nvidia.conf file located ~/dotfiles/hypr/conf/nvidia.conf"
+echo "nvidia.conf file located ~/garudadots/hypr/conf/nvidia.conf"
 echo ""
 sleep 5
 clear
-figlet -f 3d "dotfiles"
+figlet -f 3d "garudadots"
 echo ""
 echo " by hyprtk (Kori Tk) (2026) "
 echo " ------------------------------------------------------------------- "
 echo ""
 echo "The script will ask for permission to remove existing directories and files from ~/.config/"
-echo "Symbolic links will then be created from ~/dotfiles into your ~/.config/ directory."
+echo "Symbolic links will then be created from ~/garudadots into your ~/.config/ directory."
 echo "But you can decide to keep your personal versions by answering with No (Nn)."
 echo ""
 sleep 5
@@ -477,19 +477,19 @@ echo "
 echo ""
 echo ""
 echo "-------------------------------------"
-echo "-> Install general dotfiles"
+echo "-> Install general garudadots"
 echo "-------------------------------------"
 echo ""
 echo ""
-_installSymLink alacritty ~/.config/alacritty ~/dotfiles/alacritty/ ~/.config
-_installSymLink ranger ~/.config/ranger ~/dotfiles/ranger/ ~/.config
-_installSymLink vim ~/.config/vim ~/dotfiles/vim/ ~/.config
-_installSymLink nvim ~/.config/nvim ~/dotfiles/nvim/ ~/.config
-_installSymLink starship ~/.config/starship.toml ~/dotfiles/starship/starship.toml ~/.config/starship.toml
-_installSymLink rofi ~/.config/rofi ~/dotfiles/rofi/ ~/.config
-_installSymLink dunst ~/.config/dunst ~/dotfiles/dunst/ ~/.config
-_installSymLink wal ~/.config/wal ~/dotfiles/wal/ ~/.config
-_installSymLink btop ~/.config/btop ~/dotfiles/btop/ ~/.config
+_installSymLink alacritty ~/.config/alacritty ~/garudadots/alacritty/ ~/.config
+_installSymLink ranger ~/.config/ranger ~/garudadots/ranger/ ~/.config
+_installSymLink vim ~/.config/vim ~/garudadots/vim/ ~/.config
+_installSymLink nvim ~/.config/nvim ~/garudadots/nvim/ ~/.config
+_installSymLink starship ~/.config/starship.toml ~/garudadots/starship/starship.toml ~/.config/starship.toml
+_installSymLink rofi ~/.config/rofi ~/garudadots/rofi/ ~/.config
+_installSymLink dunst ~/.config/dunst ~/garudadots/dunst/ ~/.config
+_installSymLink wal ~/.config/wal ~/garudadots/wal/ ~/.config
+_installSymLink btop ~/.config/btop ~/garudadots/btop/ ~/.config
 echo ""
 clear
 echo "
@@ -500,7 +500,7 @@ echo "
 #########################################################
 "
 echo ""
-wal -i ~/dotfiles/Wallpapers/default.png
+wal -i ~/garudadots/Wallpapers/default.png
 echo "Pywal16 templates initiated!"
 echo ""
 echo ""
@@ -514,39 +514,39 @@ echo "
 echo ""
 clear
 echo "-------------------------------------"
-echo "-> Install GTK dotfiles"
+echo "-> Install GTK garudadots"
 echo "-------------------------------------"
 echo ""
-_installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/
-_installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/dotfiles/gtk/gtk-4.0/ ~/.config/
-_installSymLink themes ~/.local/share/themes ~/dotfiles/themes ~/.local/share/
-_installSymLink icons ~/.local/share/icons ~/dotfiles/papirus-icons/icons ~/.local/share/
-echo ""
-clear
-echo "-------------------------------------"
-echo "-> Install Xfce dotfiles"
-echo "-------------------------------------"
-echo ""
-_installSymLink xfce4 ~/.config/xfce4 ~/dotfiles/xfce4 ~/.config/
-_installSymLink Thunar ~/.config/Thunar ~/dotfiles/Thunar ~/.config/
-_installSymLink Mousepad ~/.config/Mousepad ~/dotfiles/Mousepad ~/.config/
+_installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/garudadots/gtk/gtk-3.0/ ~/.config/
+_installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/garudadots/gtk/gtk-4.0/ ~/.config/
+_installSymLink themes ~/.local/share/themes ~/garudadots/themes ~/.local/share/
+_installSymLink icons ~/.local/share/icons ~/garudadots/papirus-icons/icons ~/.local/share/
 echo ""
 clear
 echo "-------------------------------------"
-echo "-> Install Hyprland dotfiles"
+echo "-> Install Xfce garudadots"
 echo "-------------------------------------"
 echo ""
-_installSymLink hypr ~/.config/hypr ~/dotfiles/hypr/ ~/.config
-_installSymLink fastfetch ~/.config/fastfetch ~/dotfiles/fastfetch/ ~/.config
-_installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
-_installSymLink swaylock ~/.config/swaylock ~/dotfiles/swaylock/ ~/.config
-_installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
-_installSymLink hyprlogout ~/.config/hyprlogout ~/dotfiles/hyprlogout/ ~/.config
-_installSymLink waypaper ~/.config/waypaper ~/dotfiles/waypaper/ ~/.config
-_installSymLink zshrc ~/.config/zshrc ~/dotfiles/zshrc/ ~/.config
-_installSymLink ohmyposh ~/.config/ohmyposh ~/dotfiles/ohmyposh/ ~/.config
-_installSymLink matuwall ~/.config/matuwall ~/dotfiles/matuwall/ ~/.config
-_installSymLink wob ~/.config/wob ~/dotfiles/wob/ ~/.config
+_installSymLink xfce4 ~/.config/xfce4 ~/garudadots/xfce4 ~/.config/
+_installSymLink Thunar ~/.config/Thunar ~/garudadots/Thunar ~/.config/
+_installSymLink Mousepad ~/.config/Mousepad ~/garudadots/Mousepad ~/.config/
+echo ""
+clear
+echo "-------------------------------------"
+echo "-> Install Hyprland garudadots"
+echo "-------------------------------------"
+echo ""
+_installSymLink hypr ~/.config/hypr ~/garudadots/hypr/ ~/.config
+_installSymLink fastfetch ~/.config/fastfetch ~/garudadots/fastfetch/ ~/.config
+_installSymLink waybar ~/.config/waybar ~/garudadots/waybar/ ~/.config
+_installSymLink swaylock ~/.config/swaylock ~/garudadots/swaylock/ ~/.config
+_installSymLink swappy ~/.config/swappy ~/garudadots/swappy/ ~/.config
+_installSymLink hyprlogout ~/.config/hyprlogout ~/garudadots/hyprlogout/ ~/.config
+_installSymLink waypaper ~/.config/waypaper ~/garudadots/waypaper/ ~/.config
+_installSymLink zshrc ~/.config/zshrc ~/garudadots/zshrc/ ~/.config
+_installSymLink ohmyposh ~/.config/ohmyposh ~/garudadots/ohmyposh/ ~/.config
+_installSymLink matuwall ~/.config/matuwall ~/garudadots/matuwall/ ~/.config
+_installSymLink wob ~/.config/wob ~/garudadots/wob/ ~/.config
 mkdir ~/.local/bin
 echo ""
 clear
@@ -578,7 +578,7 @@ echo "
 echo ""
 echo "-> Install .zshrc"
 echo ""
-_installSymLink .zshrc ~/.zshrc ~/dotfiles/.zshrc ~/.zshrc
+_installSymLink .zshrc ~/.zshrc ~/garudadots/.zshrc ~/.zshrc
 echo ""
 sudo chsh -s /bin/zsh
 chsh -s /bin/zsh
@@ -590,8 +590,8 @@ echo "
 #########################################################
 "
 echo ""
-_installSymLink standalone ~/.local/bin ~/dotfiles/standalone/ ~/.local/bin
-_installSymLink oh-my-zsh ~/.oh-my-zsh/oh-my-zsh.sh ~/dotfiles/oh-my-zsh/oh-my-zsh.sh ~/.oh-my-zsh
+_installSymLink standalone ~/.local/bin ~/garudadots/standalone/ ~/.local/bin
+_installSymLink oh-my-zsh ~/.oh-my-zsh/oh-my-zsh.sh ~/garudadots/oh-my-zsh/oh-my-zsh.sh ~/.oh-my-zsh
 echo ""
 clear
 echo ""
@@ -600,7 +600,7 @@ echo "-------------------------------------"
 echo "-> Setup Root User Config"
 echo "-------------------------------------"
 echo ""
-sudo cp -r ~/dotfiles/root /
+sudo cp -r ~/garudadots/root /
 echo " Copying Config and Themes to ROOT User "
 echo ""
 sleep 3
@@ -617,6 +617,6 @@ echo "-------------------------------------"
 echo ""
 echo "DONE!"
 echo ""
-echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"
+echo "NEXT: Update the keyboard layout and screen resolution in ~/garudadots/hypr/hyprland.conf"
 echo "Now proceed with rebooting your system and Enjoy!!!"
 echo ""

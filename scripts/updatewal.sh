@@ -43,7 +43,7 @@ newwall=$(echo $wallpaper | sed "s|$HOME/Pictures/Wallpapers/||g")
 # ----------------------------------------------------- 
 cp $wallpaper ~/.cache/current-wallpaper.png
 
-~/dotfiles/papirus-icons/scripts/change-icons.sh
+~/garudadots/papirus-icons/scripts/change-icons.sh
 
 # ----------------------------------------------------- 
 # Send notification

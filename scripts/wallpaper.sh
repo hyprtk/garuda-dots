@@ -13,7 +13,7 @@
 # ----------------------------------------------------- 
 
 # Select wallpaper
-selected=$(ls -1 ~/Pictures/Wallpapers | grep "png" | rofi -dmenu -config ~/dotfiles/rofi/config-wallpaper.rasi -p "Wallpapers")
+selected=$(ls -1 ~/Pictures/Wallpapers | grep "png" | rofi -dmenu -config ~/garudadots/rofi/config-wallpaper.rasi -p "Wallpapers")
 
 if [ "$selected" ]; then
 
@@ -34,7 +34,7 @@ if [ "$selected" ]; then
     # ----------------------------------------------------- 
     cp $wallpaper ~/.cache/current-wallpaper.png
 
-    ~/dotfiles/papirus-icons/scripts/change-icons.sh
+    ~/garudadots/papirus-icons/scripts/change-icons.sh
 
     # Send notification
     notify-send "Colors and Wallpaper updated" "with image $newwall"

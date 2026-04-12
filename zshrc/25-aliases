@@ -19,8 +19,8 @@ alias v='$EDITOR'
 alias vim='$EDITOR'
 alias wifi='nmtui'
 alias arch-cleanup='~/.config/hypr/scripts/cleanup.sh'
-alias apps='~/dotfiles/scripts/applauncher.sh'
-alias update='~/dotfiles/scripts/installupdates.sh'
+alias apps='~/garudadots/scripts/applauncher.sh'
+alias update='~/garudadots/scripts/installupdates.sh'
 alias lock='swaylock'
 alias clock='tty-clock'
 
@@ -47,5 +47,5 @@ alias gcredential="git config credential.helper store"
 # -----------------------------------------------------
 # System
 # -----------------------------------------------------
-alias update-grub='~/dotfiles/sddm/update-TS-run.sh'
+alias update-grub='~/garudadots/sddm/update-TS-run.sh'
 

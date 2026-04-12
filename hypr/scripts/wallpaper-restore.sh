@@ -14,7 +14,7 @@
 # Runs on startup — restores last wallpaper and pywal colors
 
 WALLPAPER_CACHE="$HOME/.cache/wal/wal"
-FALLBACK="$HOME/dotfiles/Wallpapers/default.png"
+FALLBACK="$HOME/garudadots/Wallpapers/default.png"
 
 sleep 1
 
@@ -31,5 +31,5 @@ wal -i "$WALLPAPER" -n -q
 [ -f ~/.cache/wal/dunstrc ]              && cp ~/.cache/wal/dunstrc              ~/.config/dunst/dunstrc
 [ -f ~/.cache/wal/hyprland-colors.conf ] && cp ~/.cache/wal/hyprland-colors.conf ~/.config/hypr/hyprland-colors.conf
 
-killall waybar 2>/dev/null; ~/dotfiles/waybar/launch.sh
-~/dotfiles/papirus-icons/scripts/change-icons.sh
+killall waybar 2>/dev/null; ~/garudadots/waybar/launch.sh
+~/garudadots/papirus-icons/scripts/change-icons.sh
