@@ -17,22 +17,20 @@ echo ""
 read GRAPHICSCARD
 case $GRAPHICSCARD in
 1)
-  sudo pacman -S --noconfirm xf86-video-intel mesa vulkan-intel vulkan-intel;;
+  sudo pacman -S --noconfirm xf86-video-intel mesa vulkan-intel vulkan-intel
+  sudo dracut-rebuild;;
 2)
   sudo pacman -S --noconfirm xf86-video-amdgpu mesa vulkan-radeon vdpauinfo corectrl libvdpau vdpauinfo
-  sudo sed -i 's/MODULES=()/MODULES=(amdgpu)/' /etc/mkinitcpio.conf
-  sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img;;
+  sudo dracut-rebuild;;
 3)
-  sudo sed -i 's/GRUB_CMDLINE_LINUX="rootfstype=ext4"/GRUB_CMDLINE_LINUX="rootfstype=ext4 nvidia_drm.modeset=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau"/' /etc/default/grub
+  sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT='quiet loglevel=3'/GRUB_CMDLINE_LINUX_DEFAULT='quiet loglevel=3 nvidia_drm.modeset=1 nvidia_drm.fbdev=1'' /etc/default/grub
   sudo grub-mkconfig -o /boot/grub/grub.cfg
-  sudo sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
-  echo -e "options nvidia-drm modeset=1" | sudo tee -a /etc/modprobe.d/nvidia.conf
-  sudo pacman -S --noconfirm nvidia-open-dkms nvidia-utils nvidia-settings qt5-wayland qt5ct qt6-wayland qt6ct libva && yay --noconfirm -S libva-nvidia-driver-git
-  sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img;;
+  sudo cp -r ~/dotfiles/dracut/nvidia.conf /etc/dracut.conf.d
+  sudo pacman -S --noconfirm sudo pacman -S nvidia-dkms vulkan-validation-layers nvidia-prime nvidia-settings glxgears qt5-wayland qt5ct qt6-wayland qt6ct libva && yay --noconfirm -S libva-nvidia-driver-git
+  sudo dracut-rebuild;;
 *)
   sudo pacman -S --noconfirm xf86-video-amdgpu mesa vulkan-radeon vdpauinfo corectrl libvdpau vdpauinfo
-  sudo sed -i 's/MODULES=()/MODULES=(amdgpu)/' /etc/mkinitcpio.conf
-  sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img;;
+  sudo dracut-rebuild;;
 esac
 echo ""
 clear
