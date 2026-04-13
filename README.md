@@ -17,7 +17,7 @@ This will work on most flavours of Arch.
 - Filemanager: Thunar
 - Cursor: Bibata Modern Ice
 - Icons: Papirus-Icon-Theme
-- Virtual Machine: qemu (Windows 11 with looking glass and xrdp)
+- Virtual Machine: qemu/kvm, vmware workstation, winboat
 
 ## Hyprland
 
@@ -35,10 +35,6 @@ Hyprland: Included is a pywal16 configuration that changes the color scheme base
 Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T or by pressing the "..." icon in Waybar. The templates are available in ~/garuda-dots/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
 
 ## Screenshots & Video
-
-Garuda
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-37-05.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-42-20.png)
 
 Manjaro
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231020-194152.png)
