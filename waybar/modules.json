@@ -169,7 +169,7 @@
     // Screenshot
     "custom/screenshot": {
         "format": "",
-        "on-click": "~/garuda-dots/scripts/screenshot.sh",
+        "on-click": "~/garuda-dots/scripts/ssdetect.sh",
         "tooltip": true,
         "tooltip-format": "Take a Screenshot"
     },
