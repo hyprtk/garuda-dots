@@ -2,5 +2,5 @@
 figlet -f 3d "Media"
 echo " Media Packages "
 sudo pacman -S xclip pamixer wf-recorder pavucontrol tumbler vlc mpv ffmpeg --noconfirm
-yay -S hyprquickframe-git grimblast-git pinta slurp--noconfirm
+yay -S hyprquickframe-git grimblast-git pinta slurp --noconfirm
 echo ""
