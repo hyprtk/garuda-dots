@@ -1,6 +1,6 @@
 # Hyprland garuda-dots
 
-This is the configuration for Arch Linux, Arcolinux, Manjaro based installations of Hyprland (Wayland) and/or XFCE (Xorg).
+This is the configuration for Arch Linux, Garuda, Manjaro based installations of Hyprland (Wayland) and/or XFCE (Xorg).
 
 This will work on most flavours of Arch.
 
