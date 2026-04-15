@@ -10,7 +10,7 @@ This will work on most flavours of Arch.
 - Terminal: alacritty
 - Editor: nvim/ nano
 - Prompt: starship
-- Icons: Font Awesome
+- Menu Icons: Font Awesome
 - Menus: Rofi
 - Colorscheme: pywal16 (dynamic)
 - Browsers: chromium (brave optional)
