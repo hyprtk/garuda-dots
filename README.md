@@ -75,7 +75,7 @@ PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIP
 ```
 # Make sure that you're in your home directory
 
-git clone https://raw.githubusercontent.com/hyprtk/garuda-dots/install.sh
+git clone https://raw.githubusercontent.com/hyprtk/garuda-dots
 cd garuda-dots
 ./install.sh
 
