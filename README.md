@@ -37,10 +37,22 @@ Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T 
 ## Screenshots & Video
 
 Garuda
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_16-35-25.png)
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-37-05.png)
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-42-20.png)
 
+Arch Linux
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_13-02-05.png)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_13-04-49.png)
+
+Manjaro
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_15-01-38.png)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_15-00-19.png)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_15-01-24.png)
+
+ArcoLinux - No Longer producing Install ISO's (I am not removing the screenshots though)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/53256162013_6be4b66963_o.png)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/53256224204_aaa86aff2e_o.png)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/53256357675_f6af5c7757_o.png)
 
 ## Getting started
 
