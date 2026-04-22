@@ -58,6 +58,11 @@ Arch Linux
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_13-02-05.png)
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_13-04-49.png)
 
+Endeavour
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-22_11-16-25.png)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-22_11-16-47.png)
+![MODEL](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-22_11-17-59.png)
+
 Manjaro
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_15-01-38.png)
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_15-00-19.png)
