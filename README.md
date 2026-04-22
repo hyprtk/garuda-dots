@@ -49,8 +49,9 @@ The templates are available in ~/dotfiles/waybar/themes. You can add your own pe
 ## Screenshots & Video
 
 Garuda
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-37-05.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-42-20.png)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-22_09-43-27.png)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-22_09-42-03.png)
+![MODEL](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-22_09-43-12.png)
 
 Arch Linux
 ![MODEL](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-21_13-04-59.png)
