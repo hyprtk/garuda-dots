@@ -593,6 +593,7 @@ echo ""
 _installSymLink standalone ~/.local/bin ~/garuda-dots/standalone/ ~/.local/bin
 _installSymLink oh-my-zsh ~/.oh-my-zsh/oh-my-zsh.sh ~/garuda-dots/oh-my-zsh/oh-my-zsh.sh ~/.oh-my-zsh
 echo ""
+rm -R $HOME/dotfiles
 clear
 echo ""
 echo ""
